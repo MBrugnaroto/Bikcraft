@@ -1,0 +1,25 @@
+.pagina_sobre {
+	background: url("../img/bg-sobre.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.subtitulo_pagina {
+	padding-top: 77px;
+}
+
+.equipe_historia p {
+	font-size: 18px;
+	line-height: 25px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+}
+
+.equipe_valores {
+	font-size: 18px;
+	font-family: Georgia, "Times New Roman", serif;
+	line-height: 30px;
+}
+
+.equipe_imagem {
+	padding-top: 20px;
+}
