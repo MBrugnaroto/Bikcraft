@@ -11,6 +11,7 @@ p {
 
 img {
 	display: block;
+	max-width: 100%;
 }
 
 .btn {
@@ -35,9 +36,9 @@ img {
 }
 
 .subtitulo {
-	font-weight: bold;
 	line-height: 30px;
 	font-size: 24px;
+	font-weight: bold;
 	letter-spacing: .1em;
 	color: #000; /*Preto*/
 	text-align: center;
@@ -121,6 +122,7 @@ img {
 	background-size: cover;
 	margin-top: 92px;
 	text-align: center;
+	padding-top: 80px;
 }
 
 .introducao h1 {
@@ -128,7 +130,6 @@ img {
 	color: #FFF;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-top: 80px;
 }
 
 .quote-externo {
@@ -160,22 +161,17 @@ img {
 /* Introdução das Páginas*/
 .introducao_paginas {
 	width: 100%;
-	height: 160px;
 	margin-top: 92px;
+	height: 160px;
 	text-align: center;
+	color: #fff;
+	padding-top: 30px;
 }
 
 .introducao_paginas h1 {
 	font-size: 36px;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: .1rem;
-	color: #FFF;
-	padding-top: 40px;
-}
-
-.introducao_paginas p {
-	color: #FFF;
 }
 
 .introducao_paginas h1:after {
@@ -184,7 +180,7 @@ img {
 	width: 60px;
 	height: 3px;
 	background: #FFF;
-	margin: 9px auto;
+	margin: 6px auto 10px auto;
 }
 
 /*Produtos*/
@@ -195,6 +191,9 @@ img {
 .produtos_lista li {
 	background: #FEC63E;
 	text-align: center;
+}
+.produtos_lista li img{
+	margin: 0 auto;
 }
 
 .produtos_lista li h3 {
@@ -384,5 +383,5 @@ img {
 	background: #FEC63E;
 	text-align: center;
 	height: 25px;
-	padding-top: 2.5px;
+	padding: 2.5px;
 }
