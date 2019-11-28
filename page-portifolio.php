@@ -24,19 +24,9 @@
 <!-- Portifólio-->
 <section class="portifolio">
 	<div class="container" data-slide="portifolio">
-		<ul class="portifolio_lista">
-			<li class="grid-8"><img src="img/portifolio/retro.jpg" alt="Bicicleta Retro"></li>
-			<li class="grid-8"><img src="img/portifolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-			<li class="grid-16"><img src="img/portifolio/esporte.jpg" alt="Bicicleta Esporte"></li>
-		</ul>
-		<ul class="portifolio_lista">
-			<li class="grid-8"><img src="img/portifolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-			<li class="grid-8"><img src="img/portifolio/retro.jpg" alt="Bicicleta Retro"></li>
-			<li class="grid-16"><img src="img/portifolio/esporte.jpg" alt="Bicicleta Esporte"></li>
-		</ul>
+		<?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php")?>
 	</div>
 </section>
-<!-- Portifólio-->
 <?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>

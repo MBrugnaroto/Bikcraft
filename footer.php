@@ -26,9 +26,9 @@
 			<div class="grid-4 footer_redes">
 				<h3>Contato</h3>
 				<ul>
-					<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
-					<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
-					<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter"></a></li>
+					<li><a href="http://facebook.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
+					<li><a href="http://instagram.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
+					<li><a href="http://twitter.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/twitter.svg" alt="Twitter"></a></li>
 				</ul>
 			</div>
 

@@ -7,12 +7,12 @@
 <!-- Introdução-->
 <section class="introducao">
 	<div class="container">
-		<h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
+		<h1 data-anime="400" class="fadeInDown"><?php the_field('titulo_introducao'); ?></h1>
 		<blockquote data-anime="800" class="quote-externo fadeInDown">
-			<p>"Não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
-			<cite>WILLIAN MORRIS</cite>
+			<p><?php the_field('quote_introducao'); ?></p>
+			<cite><?php the_field('citacao_introducao'); ?></cite>
 		</blockquote>
-		<a data-anime="1200" href="produtos.html" class="btn">Orçamento</a>
+		<a data-anime="1200" href="/Bikcraft/produtos/" class="btn">Orçamento</a>
 	</div>
 </section>
 <!-- Introdução-->
@@ -48,8 +48,8 @@
 	</ul>
 
 	<div class="call">
-		<p>Clique aqui e veja os detalhes dos produtos</p>
-		<a href="produtos.html" class="btn btn-preto">Produtos</a>
+		<p><?php the_field('chamada_introducao'); ?></p>
+		<a href="/Bikcraft/produtos" class="btn btn-preto">Produtos</a>
 	</div>
 
 </section>
@@ -59,42 +59,13 @@
 <section class="portifolio">
 	<div class="container">
 		<h2 class="subtitulo">Portifólio</h2>
-		<ul class="portifolio_lista">
-			<li class="grid-8"><img src="img/portifolio/retro.jpg" alt="Bicicleta Retro"></li>
-			<li class="grid-8"><img src="img/portifolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-			<li class="grid-16"><img src="img/portifolio/esporte.jpg" alt="Bicicleta Esporte"></li>	
-		</ul>
-		<div class="call">
-			<p>Clique aqui e veja os detalhes do nosso portifólio</p>
-			<a href="portifolio.html" class="btn">Portifólio</a>
-		</div>
+		<?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php")?>
 	</div>
 </section>
 <!-- Portifólio-->
 
 <!-- Qualidade-->
-<section class="qualidade container">
-	<h2 class="subtitulo">Qualidade</h2>
-	<img src="img/bikcraft-qualidade.svg" alt="Bikcraft">
-	<ul class="qualidade_lista">
-		<li class="grid-1-3">
-			<h3>Durabilidade</h3>
-			<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação</p>
-		</li>
-		<li class="grid-1-3">
-			<h3>Design</h3>
-			<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação</p>
-		</li>
-		<li class="grid-1-3">
-			<h3>Sustentabilidade</h3>
-			<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação</p>
-		</li>
-	</ul>
-	<div class="call">
-		<p>Conheça mais a nossa história</p>
-		<a href="sobre.html" class="btn btn-preto">Sobre</a>
-	</div>
-</section>
+<?php include(TEMPLATEPATH . "/inc/qualidade.php"); ?>
 <!-- Qualidade-->
 <?php endwhile; else: endif; ?>
 

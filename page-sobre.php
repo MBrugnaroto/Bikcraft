@@ -29,24 +29,7 @@
 <!-- História-->
 
 <!-- Qualidade-->
-<section class="qualidade container">
-	<h2 class="subtitulo">Qualidade</h2>
-	<img src="img/bikcraft-qualidade.svg" alt="Bikcraft">
-	<ul class="qualidade_lista">
-		<li class="grid-1-3">
-			<h3>Durabilidade</h3>
-			<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação</p>
-		</li>
-		<li class="grid-1-3">
-			<h3>Design</h3>
-			<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação</p>
-		</li>
-		<li class="grid-1-3">
-			<h3>Sustentabilidade</h3>
-			<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação</p>
-		</li>
-	</ul>
-</section>
+<?php include(TEMPLATEPATH . "/inc/qualidade.php"); ?>
 <!-- Qualidade-->
 <?php endwhile; else: endif; ?>
 
