@@ -1,8 +1,17 @@
+<?php $contato = get_page_by_title('contato'); ?>
+
+<style type="text/css">
+	.quebra {
+	background: url("<?php the_field('background_quebra', $contato); ?>") no-repeat center;
+	background-size: cover;
+}
+</style>
+
 <!-- Quebra-->
 <div class="quebra ">
 	<blockquote class="quote-externo container">
-		<p>"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana"</p>
-		<cite>WILLIAN MORRIS</cite>
+		<?php the_field('frase_footer', $contato); ?>
+		<cite><?php the_field('autor_footer', $contato); ?></cite>
 	</blockquote>
 </div>
 <!-- Quebra-->
@@ -13,30 +22,26 @@
 
 			<div class="grid-8 footer_historia">
 				<h3>Nossa História</h3>
-				<p>O verdadeiro segredo da felicidade está em ter um genuíno interesse ppor todos os detalhes da vida cotidiana.</p>
+				<?php the_field('resumo_historia', $contato); ?>
 			</div>
 			<div class="grid-4 footer_contato">
 				<h3>Contato</h3>
 					<ul>
-						<li>- 123456789</li>
-						<li>- bikcraft@email.com</li>
-						<li>- Rua Batata Doce, Palmeiras - RJ</li>
+						<li>- <?php the_field('telefone', $contato); ?></li>
+						<li>- <?php the_field('email', $contato); ?></li>
+						<li>- <?php the_field('endereco1', $contato); ?></li>
 					</ul>
 			</div>
 			<div class="grid-4 footer_redes">
 				<h3>Contato</h3>
-				<ul>
-					<li><a href="http://facebook.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
-					<li><a href="http://instagram.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
-					<li><a href="http://twitter.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/twitter.svg" alt="Twitter"></a></li>
-				</ul>
+				<?php include(TEMPLATEPATH . "/inc/redes-sociais.php"); ?>
 			</div>
 
 		</div>
 		</div>
 		<div class="copy">
 			<div class="container">
-				<p class="grid-16">Bikcraft 2015 - Alguns direitos reservados</p>
+				<p class="grid-16"><?php bloginfo('name') ?> <?php echo date('Y'); ?> - Alguns direitos reservados</p>
 			</div>
 		</div>
 	</footer>

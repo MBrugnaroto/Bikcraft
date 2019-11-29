@@ -10,20 +10,14 @@
 <section class="container fadeInDown" data-anime="1200">
 	<div class="grid-10 equipe_historia">
 		<h2 class="subtitulo_pagina">Historia, missão e Visão</h2>
-		<p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
-		<p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+		<?php the_field('missao'); ?>
 	</div>
 	<div class="grid-6 equipe_valores">
 		<h2 class="subtitulo_pagina">Valores</h2>
-		<ul>
-			<li>- Qualidade no processo com</li>
-			<li>- Foco no cliente sem perder a</li>
-			<li>- Diversão, preservando a</li>
-			<li>- Natureza com sustentabilidade</li>
-		</ul>
+		<?php the_field('valores'); ?>
 	</div>
 	<div class="grid-16 equipe_imagem">
-		<img src="img/equipe-bikcraft.jpg" alt="História">
+		<img src="<?php the_field('imagem_equipe'); ?>" alt="História">
 	</div>
 </section>
 <!-- História-->

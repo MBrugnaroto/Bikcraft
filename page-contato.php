@@ -8,7 +8,7 @@
 	
 <!-- Orçamento-->
 <section class="contato container fadeInDown" data-anime="1200">
-	<form id="form_orcamento" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
+	<form id="form_orcamento" method="POST" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="contato_form grid-8 formphp">
 		<label for="nome">Nome</label>
 		<input type="text" id="nome" name="nome" required>
 		<label for="email">E-mail</label>
@@ -29,24 +29,20 @@
 	</form>
 	<div class="contato_dados grid-8">
 		<h3>Dados</h3>
-		<span>+55 5646548943</span>
-		<span>orcamento@bikcraft.com</span>
-		<span>Rua Batata Doce - Palmeiras</span>
-		<span>Rio de Janeiro - Brasil</span>
+		<span><?php the_field('telefone'); ?></span>
+		<span><?php the_field('email'); ?></span>
+		<span><?php the_field('endereco1'); ?></span>
+		<span><?php the_field('endereco2'); ?></span>
 
 		<h3>Redes Sociais</h3>
-		<ul>
-			<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
-			<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
-			<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter"></a></li>
-		</ul>
+		<?php include(TEMPLATEPATH . "/inc/redes-sociais.php"); ?>
 	</div>
 </section>
 <!-- Orçamento-->
 
 <!-- Mapa-->
 <section class="container contato_mapa">
-	<a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da bikcraft"></a>
+	<a href="<?php the_field('link_mapa'); ?>" target="_blank" class="grid-16"><img src="<?php the_field('imagem_mapa'); ?>" alt="Endereço da bikcraft"></a>
 </section>
 <!-- Mapa-->
 <?php endwhile; else: endif; ?>
