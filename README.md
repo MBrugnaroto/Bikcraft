@@ -13,6 +13,8 @@
 #### Foco do Desenvolvimento
 <p> HTML </p>
 <p> CSS </p>
+<p> UX Design </p>
+<p> UI Design </p>
 
 #### Link para visualização rápida do design final
 
